@@ -1,0 +1,529 @@
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    * {
+        font-family: "Poppins", "sans-serif";
+        margin: 0%;
+        max-width: 100vw;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        padding: 0%;
+        min-height: 100vh;
+    }
+    
+    .title,
+    .subtitle {
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 25px;
+        font-weight: 500;
+        color: #385e72;
+        margin-left: 25vw;
+    }
+    
+    .subtitle {
+        font-size: 21px;
+        font-weight: 300;
+        color: #1f628e;
+        margin-left: 25vw;
+    }
+    
+    .site-header {
+        background-color: #ffffff;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .rounded-circle {
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+    }
+    
+    img {
+        width: 125px;
+        height: 125px;
+        margin-bottom: 40px;
+    }
+    
+    .top {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .centrado {
+        max-width: 100vw;
+        margin: 0 auto;
+        height: 75rem;
+        padding-left: 28px;
+        padding-top: 50px;
+        display: flex;
+    }
+    
+    .display {
+        height: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fit-content;
+        margin-top: 200px;
+    }
+    
+    .row1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+    
+    .deslizado {
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+    
+    @keyframes slide {
+        0% {
+            background: url(../imagen/foto_dos.webp);
+            background-size: cover;
+            background-position: center center;
+        }
+        50% {
+            background: url(../imagen/foto_uno.webp);
+            background-size: cover;
+            background-position: center center;
+        }
+        100% {
+            background: url(../imagen/jurado-popular.webp) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+    /*Navegación*/
+    
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #ffffff;
+        margin-bottom: 0px;
+    }
+    
+    .navegacion a {
+        color: #1f628e;
+        text-decoration: none;
+        font-size: 1.3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding: 5px;
+    }
+    /*Cards*/
+    
+    .access {
+        background-color: #ffffff;
+        width: 20rem;
+        height: 25rem;
+        display: flex;
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 100px;
+        border-radius: 10px;
+        margin: 70px 20px 10px 20px;
+    }
+    
+    .card {
+        margin-right: 20px;
+    }
+    
+    .card-admin {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 150%;
+        align-items: center;
+        color: #385e72;
+        width: 40px;
+        height: 45px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 25px;
+        padding-top: 0px;
+        padding-left: 0;
+    }
+    
+    .card-admin-nuevo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: #385e72;
+        width: 40px;
+        height: 45px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 25px;
+        padding-top: 0px;
+        padding-left: 0;
+    }
+    
+    .inputs {
+        display: flex;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    
+     ::-webkit-input-placeholder {
+        text-align: center;
+    }
+    
+    .card-body {
+        color: #385e72;
+        width: 300px;
+        height: 250px;
+    }
+    
+    .card {
+        display: flex;
+        text-align: center;
+        padding-top: 50px;
+        border-radius: 10px;
+        margin: 10px 20px 10px 20px;
+    }
+    /*Buttons & Inputs*/
+    
+    .btn {
+        background-color: #1f628e;
+        border-color: #1f628e;
+    }
+    
+    .btn1 {
+        background-color: #1f628e;
+        border-color: #1f628e;
+        border-radius: 3px;
+        text-decoration: none;
+        color: #ffffff;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-top: 25px;
+    }
+    
+    .btn-login {
+        border: solid 3px #385e72;
+        border-radius: 15px;
+        color: #1f628e;
+        font-weight: 500;
+        text-decoration: none;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 18px;
+        padding-left: 18px;
+        margin: 10px;
+        margin-bottom: 32px;
+        width: 250px;
+    }
+    
+    .btn-login-n {
+        border: solid 3px #385e72;
+        border-radius: 15px;
+        color: #1f628e;
+        font-weight: 500;
+        text-decoration: none;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 8px;
+        padding-left: 15px;
+        margin: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 150px;
+    }
+    
+    .registro {
+        font-weight: 570;
+    }
+    
+    .display-info {
+        height: 70rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        margin-top: 530px;
+    }
+    
+    .info {
+        width: 95vw;
+        height: 70rem;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 25px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .preguntas {
+        font-size: 18px;
+        font-weight: 500;
+        color: #1f628e;
+    }
+    
+    .respuestas {
+        font-size: 16px;
+        font-weight: 300;
+        color: #385e72;
+    }
+    /*Footer*/
+    
+    .footer {
+        background-color: #ffffff;
+    }
+    
+    .grupo {
+        font-weight: 300;
+        font-size: 25px;
+        text-align: center;
+        color: #1f628e;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /*Cambio tamaño de pantalla*/
+    
+    @media (min-width: 768px) {
+        .title,
+        .subtitle {
+            text-align: center;
+            margin-left: 42vw;
+        }
+        .rounded-circle {
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .centrado {
+            max-width: 120rem;
+            margin: 0 auto;
+            height: 100vh;
+            background-repeat: cover;
+            padding-left: 28px;
+            padding-top: 50px;
+            display: flex;
+        }
+        .top {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .site-header {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navegacion a {
+            color: #1f628e;
+            text-decoration: none;
+            font-size: 1.3rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            padding: 5px;
+            border-right: 3px solid #1f628e;
+            padding-right: 80px;
+        }
+        .navegacion {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin-bottom: 0px;
+            width: 95vw;
+        }
+        .navegacion a:last-of-type {
+            margin-right: 2rem;
+            border-right: none;
+            padding-right: 10px;
+        }
+        .navegacion a:first-of-type {
+            margin-left: 2rem;
+        }
+        .card {
+            margin: 100px;
+        }
+        .card {
+            margin-right: 20px;
+        }
+        .card-admin {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 150%;
+            align-items: center;
+            color: #385e72;
+            width: 250px;
+            height: 220px;
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-bottom: 25px;
+            padding-top: 0px;
+            padding-left: 0;
+        }
+        .card-admin-nuevo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            color: #385e72;
+            width: 270px;
+            height: 220px;
+            margin-left: 20px;
+            margin-right: 5px;
+            margin-bottom: 25px;
+            padding-top: 0px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .inputs {
+            display: flex;
+            margin-top: 5px;
+        }
+         ::-webkit-input-placeholder {
+            text-align: center;
+        }
+        .access {
+            background-color: #ffffff;
+            width: 32rem;
+            height: 25rem;
+            display: flex;
+            text-align: center;
+            padding-top: 30px;
+            padding-left: 100px;
+            border-radius: 10px;
+            margin: 70px 20px 10px 20px;
+        }
+        .card-body {
+            color: #385e72;
+            width: 300px;
+            height: 250px;
+        }
+        .card {
+            display: flex;
+            text-align: center;
+            padding-top: 50px;
+            border-radius: 10px;
+            margin: 10px 20px 10px 20px;
+        }
+        .info {
+            width: 95vw;
+            height: 500px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 25px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .preguntas {
+            font-size: 18px;
+            font-weight: 500;
+            color: #1f628e;
+        }
+        .respuestas {
+            font-size: 16px;
+            font-weight: 300;
+            color: #385e72;
+        }
+        /*Buttons & Inputs*/
+        .btn {
+            background-color: #1f628e;
+            border-color: #1f628e;
+        }
+        .btn1 {
+            background-color: #1f628e;
+            border-color: #1f628e;
+            border-radius: 3px;
+            text-decoration: none;
+            color: #ffffff;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin-top: 25px;
+        }
+        .btn-login {
+            border: solid 3px #385e72;
+            border-radius: 15px;
+            color: #1f628e;
+            font-weight: 500;
+            text-decoration: none;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 18px;
+            padding-left: 18px;
+            margin: 10px;
+            margin-bottom: 32px;
+            width: 300px;
+        }
+        .btn-login-n {
+            border: solid 3px #385e72;
+            border-radius: 15px;
+            color: #1f628e;
+            font-weight: 500;
+            text-decoration: none;
+            width: 210px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 12px;
+            padding-left: 12px;
+            margin: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .registro {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .display {
+            height: 70rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            margin-top: 600px;
+            position: fixed;
+        }
+        .display-info {
+            height: 70rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            margin-top: 530px;
+            position: fixed;
+        }
+        .row1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 260px;
+            margin-top: 50px;
+        }
+    }

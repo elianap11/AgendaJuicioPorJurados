@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" th:href="@{/css/estilos.css}" />
+    <title>Info</title>
+</head>
+
+<body>
+    <header "header" class="site-header fixed-top">
+        <div class="top">
+            <h1 class="title">AGENDA PÚBLICA</h1>
+            <h2 class="subtitle">de juicios por jurado</h2>
+        </div>
+        <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="imagen/perfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle" />
+            </a>
+            <div class="container d-flex justify-content-center text-white">
+
+                <img class="rounded-circle" th:src="${session.image != null} ? @{/upload/__${session.image}__} : @{/upload/foto-no-disponible.png}" width="80">
+
+                <span class="text-dark" th:text="${session.id != null} ? |${session.nombre} ${session.apellido} - ${session.rol}| : 'Gestor de Librería'"></span>
+
+
+            </div>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Editar foto de perfil</a></li>
+                <hr class="dropdown-divider" />
+                <li><a class="dropdown-item" href="#">Cerrar sesión </a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="
+        d-flex
+        justify-content-evenly
+        align-items-center
+        centrado
+        deslizado
+      ">
+        <section class="display-info">
+            <div th:fragmento="navbar" class="barra">
+                <nav class="navegacion">
+                    <a href="">Info</a>
+                    <!-- <a href="">|</a> -->
+                    <a href="">Calendario</a>
+                    <!-- <a href="">|</a> -->
+                    <a href="">Búsqueda por Depto. Judicial</a>
+                    <!-- <a href="">|</a> -->
+                    <a href="">Búsqueda por Carátula</a>
+                </nav>
+            </div>
+
+            <div class="info">
+                <h3 class="preguntas">¿Qué son los Juicios por Jurados?</h3>
+                <p class="respuestas">Es un proceso judicial que se implementó en Buenos Aires en 2015. Los jurados, 12 ciudadanos, son los responsables de votar el veredicto: culpable o inocente. El juez es el encargado de fijar la pena si hubiera condena. Se aplica en casos
+                    con delitos que prevén más de 15 años de prisión como homicidios, violaciones y torturas.
+                </p>
+                <h3 class="preguntas">¿Qué son los Juicios por Jurados?</h3>
+                <p class="respuestas">El Instituto Provincial de Lotería y Casinos de La Plata realiza un sorteo una vez por año para obtener tres números: los ciudadanos que tengan esa terminación en el DNI son elegidos por la Junta Electoral bonaerense de acuerdo a algunas
+                    condiciones: ser argentinos nativos o naturalizados con cinco años de ciudadanía, tener entre 21 y 75 años y gozar de aptitud física y psíquica para el desempeño del cargo. Hay que recordar que la función de jurado es una carga pública
+                    obligatoria.
+                </p>
+                <h3 class="preguntas">¿Quiénes no pueden ser jurado?</h3>
+                <p class="respuestas">Quedan eximidos quienes tengan responsabilidades públicas de relevancia como autoridades políticas, funcionarios del Poder Judicial, abogados/as, escribanos/as, integrantes de las fuerzas de seguridad en actividad o retirados/as. Y las
+                    personas que tengan alguna enfermedad física o psíquica que les impida ejercer la función.</p>
+                <h3 class="preguntas">¿Cómo sé que me toca ser jurado?</h3>
+                <p class="respuestas">El Ministerio de Justicia bonaerense enviará una carta por correo con una declaración jurada que el preseleccionado debe completar y enviar gratuitamente. Si fue seleccionado le llegará una citación con los datos necesarios para que pueda
+                    asistir a la audiencia de selección de jurados. Esta participación es remunerada: quienes trabajan en relación de dependencia no cobran, pero el empleador deberá pagar el salario como si hubiese trabajado normalmente. Los gastos de
+                    transporte y comida los cubre el Tribunal y brinda un certificado de asistencia.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer fixed-bottom">
+        <div class="fotter-info">
+            <h2 class="grupo">EGG - Grupo 8 ®️</h2>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
