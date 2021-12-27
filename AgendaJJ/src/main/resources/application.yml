@@ -36,4 +36,4 @@ logging:
     springframework:
       web: debug
 my:
-  property: C:\Users\eblon\Desktop\PROYECTO\juicioPorJurados\AgendaJJ\src\main\resources\static\static.UPLOAD
+  property:
